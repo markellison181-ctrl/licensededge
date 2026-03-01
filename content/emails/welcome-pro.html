@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ContractPulse Pro - VIP Federal Contract Intelligence</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background: linear-gradient(135deg, #0B3D2E 0%, #1a5c47 100%);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #0B3D2E 0%, #134238 50%, #1a5c47 100%);
+            border-radius: 0;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, rgba(212, 168, 83, 0.2) 0%, rgba(212, 168, 83, 0.1) 100%);
+            border-bottom: 2px solid #D4A853;
+            padding: 30px 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .pro-badge {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            background: #D4A853;
+            color: #0B3D2E;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .logo {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #D4A853 0%, #c49a4a 100%);
+            border-radius: 8px;
+            color: #0B3D2E;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 60px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(212, 168, 83, 0.3);
+        }
+        
+        .hero {
+            padding: 40px 40px 30px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.02);
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 16px;
+            color: #ffffff;
+            line-height: 1.2;
+        }
+        
+        .hero .highlight {
+            color: #D4A853;
+            background: linear-gradient(135deg, #D4A853 0%, #c49a4a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            color: #a0a0a0;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .vip-banner {
+            background: linear-gradient(135deg, rgba(212, 168, 83, 0.15) 0%, rgba(212, 168, 83, 0.05) 100%);
+            border: 2px solid #D4A853;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 30px 20px;
+            text-align: center;
+        }
+        
+        .vip-banner h3 {
+            color: #D4A853;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .pro-stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            padding: 0 20px;
+        }
+        
+        .stat {
+            text-align: center;
+            padding: 20px 10px;
+            background: linear-gradient(135deg, rgba(212, 168, 83, 0.1) 0%, rgba(212, 168, 83, 0.05) 100%);
+            border-radius: 8px;
+            border: 1px solid #D4A853;
+            flex: 1;
+            margin: 0 5px;
+        }
+        
+        .stat-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #D4A853;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: #a0a0a0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .content {
+            padding: 30px 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #D4A853;
+            margin-bottom: 16px;
+        }
+        
+        .section p {
+            color: #cccccc;
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+        
+        .pro-features {
+            background: rgba(212, 168, 83, 0.05);
+            border: 1px solid rgba(212, 168, 83, 0.2);
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .feature {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #D4A853;
+        }
+        
+        .feature h4 {
+            color: #D4A853;
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        .feature p {
+            color: #cccccc;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .intelligence-preview {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%);
+            border: 1px solid rgba(212, 168, 83, 0.3);
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+        
+        .preview-header {
+            font-size: 18px;
+            font-weight: bold;
+            color: #D4A853;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .daily-alerts {
+            background: rgba(212, 168, 83, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .alert-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .alert-item:last-child {
+            border-bottom: none;
+        }
+        
+        .alert-agency {
+            background: #D4A853;
+            color: #0B3D2E;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        
+        .alert-title {
+            color: #ffffff;
+            font-size: 14px;
+            margin: 4px 0;
+        }
+        
+        .alert-value {
+            color: #D4A853;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, rgba(212, 168, 83, 0.15) 0%, rgba(212, 168, 83, 0.05) 100%);
+            border: 2px solid #D4A853;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #D4A853 0%, #c49a4a 100%);
+            color: #0B3D2E;
+            text-decoration: none;
+            padding: 16px 32px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            margin: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(212, 168, 83, 0.3);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(212, 168, 83, 0.4);
+        }
+        
+        .footer {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 30px 40px;
+            text-align: center;
+            border-top: 1px solid rgba(212, 168, 83, 0.2);
+        }
+        
+        .footer p {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .footer a {
+            color: #D4A853;
+            text-decoration: none;
+        }
+        
+        .concierge-contact {
+            background: rgba(212, 168, 83, 0.1);
+            border: 1px solid rgba(212, 168, 83, 0.3);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                margin: 0;
+                border-radius: 0;
+            }
+            
+            .hero, .content, .header, .footer {
+                padding: 20px !important;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .pro-stats {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .stat {
+                margin: 0 0 10px 0;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-button {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="pro-badge">PRO MEMBER</div>
+            <div class="logo">CP</div>
+            <h3 style="color: #ffffff; margin: 0;">ContractPulse Pro</h3>
+            <p style="color: #a0a0a0; margin: 10px 0 0 0; font-size: 14px;">VIP Federal Contract Intelligence</p>
+        </div>
+        
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>Welcome to <span class="highlight">ContractPulse Pro</span></h1>
+            <p>You now have VIP access to the most comprehensive federal contract intelligence platform. Join elite contractors who leverage our premium data to win $100M+ annually.</p>
+            
+            <div class="vip-banner">
+                <h3>🏆 VIP Member Benefits Activated</h3>
+                <p style="color: #cccccc; margin: 0;">Daily alerts, full data access, API integration, and priority support</p>
+            </div>
+            
+            <div class="pro-stats">
+                <div class="stat">
+                    <div class="stat-number">Daily</div>
+                    <div class="stat-label">Contract Alerts</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">Full</div>
+                    <div class="stat-label">Data Access</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">API</div>
+                    <div class="stat-label">Integration</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            <div class="section">
+                <h2>Your Pro Features Are Now Active</h2>
+                
+                <div class="pro-features">
+                    <h3 style="color: #D4A853; margin-bottom: 20px; text-align: center;">Everything in ContractPulse Pro</h3>
+                    
+                    <div class="feature-grid">
+                        <div class="feature">
+                            <h4>📱 Daily Contract Alerts</h4>
+                            <p>Receive targeted contract opportunities every morning, filtered to your specific NAICS codes and agency preferences.</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <h4>🔍 Full Database Access</h4>
+                            <p>Search and export complete contract data, including historical awards, vendor information, and spending trends.</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <h4>⚡ API Integration</h4>
+                            <p>Integrate ContractPulse data directly into your CRM or business intelligence tools via our RESTful API.</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <h4>📊 Advanced Analytics</h4>
+                            <p>Access detailed spending forecasts, competitive analysis, and win rate data by agency and contract type.</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <h4>🎯 Sector-Specific Filters</h4>
+                            <p>Customize alerts for your exact capabilities: IT services, construction, professional services, R&D, and more.</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <h4>📈 Competitive Intelligence</h4>
+                            <p>Track your competitors' wins, identify their strategies, and discover underserved market segments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="intelligence-preview">
+                <div class="preview-header">🚨 Today's VIP Contract Alerts</div>
+                
+                <div class="daily-alerts">
+                    <div class="alert-item">
+                        <div>
+                            <div class="alert-agency">DoD</div>
+                            <div class="alert-title">AI/ML Platform Development - JWCC Task Order</div>
+                            <div style="font-size: 12px; color: #888;">Posted 3 hours ago • Responses due March 15</div>
+                        </div>
+                        <div class="alert-value">$89M</div>
+                    </div>
+                    
+                    <div class="alert-item">
+                        <div>
+                            <div class="alert-agency">VA</div>
+                            <div class="alert-title">Healthcare Data Analytics Platform</div>
+                            <div style="font-size: 12px; color: #888;">Posted 6 hours ago • Responses due March 22</div>
+                        </div>
+                        <div class="alert-value">$34M</div>
+                    </div>
+                    
+                    <div class="alert-item">
+                        <div>
+                            <div class="alert-agency">DHS</div>
+                            <div class="alert-title">Cybersecurity Mesh Architecture Implementation</div>
+                            <div style="font-size: 12px; color: #888;">Posted 8 hours ago • Small Business Set-Aside</div>
+                        </div>
+                        <div class="alert-value">$12M</div>
+                    </div>
+                </div>
+                
+                <p style="text-align: center; color: #D4A853; font-size: 14px; margin: 0;">
+                    💡 Pro Tip: Click any alert to view complete RFP details, past winners, and bid strategy recommendations
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Your Dedicated Success Team</h2>
+                <p>As a Pro member, you have direct access to our federal contracting experts:</p>
+                
+                <div class="concierge-contact">
+                    <h4 style="color: #D4A853; margin-bottom: 15px;">📞 VIP Support Hotline</h4>
+                    <p><strong>Email:</strong> <a href="mailto:pro@contractpulse.io" style="color: #D4A853;">pro@contractpulse.io</a> (Response within 2 hours)</p>
+                    <p><strong>Priority Phone:</strong> Schedule 1-on-1 consultation calls for complex opportunities</p>
+                    <p><strong>Slack Channel:</strong> Join our private Pro member community for real-time discussions</p>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <h3 style="color: #D4A853; margin-bottom: 20px;">Access Your Pro Dashboard</h3>
+                <p style="color: #cccccc; margin-bottom: 25px;">Your personalized contract intelligence center is ready</p>
+                
+                <a href="https://contractpulse.io/pro/dashboard" class="cta-button">
+                    🚀 Launch Pro Dashboard
+                </a>
+                
+                <div style="margin-top: 20px; font-size: 14px; color: #a0a0a0;">
+                    <p>✅ Daily alerts configured for your NAICS codes</p>
+                    <p>✅ API credentials generated and ready</p>
+                    <p>✅ Full database access activated</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Questions? Our Experts Are Standing By</h2>
+                <p>Your Pro membership includes unlimited expert consultation. Our team of former federal procurement officers and successful contractors is here to help you:</p>
+                
+                <ul style="color: #cccccc; margin-left: 20px; margin-top: 10px;">
+                    <li>Identify the highest-value opportunities for your capabilities</li>
+                    <li>Develop winning proposal strategies based on historical data</li>
+                    <li>Navigate complex compliance requirements and certifications</li>
+                    <li>Build relationships with key agency decision-makers</li>
+                </ul>
+                
+                <p style="margin-top: 20px;"><strong style="color: #D4A853;">Pro members average 340% higher win rates</strong> compared to contractors without intelligence platforms.</p>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p><strong>ContractPulse Pro</strong> - VIP Federal Contract Intelligence</p>
+            <p>Your success is our mission</p>
+            
+            <div style="margin: 20px 0; padding: 15px; background: rgba(212, 168, 83, 0.1); border-radius: 8px;">
+                <p style="color: #D4A853; font-weight: bold; margin-bottom: 5px;">📱 Pro Mobile App Available</p>
+                <p style="font-size: 12px; color: #cccccc; margin: 0;">Download from App Store or Google Play to receive push notifications for urgent opportunities</p>
+            </div>
+            
+            <p style="margin-top: 20px;">
+                <a href="{{manage_subscription_url}}">Manage Subscription</a> | 
+                <a href="https://contractpulse.io/pro/privacy">Privacy Policy</a> | 
+                <a href="mailto:pro@contractpulse.io">Pro Support</a>
+            </p>
+            
+            <p style="font-size: 12px; color: #666; margin-top: 20px;">
+                © 2026 SignalStack Media LLC. All rights reserved.<br>
+                ContractPulse Pro - Premium Federal Contract Intelligence
+            </p>
+        </div>
+    </div>
+</body>
+</html>

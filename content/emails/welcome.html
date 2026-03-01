@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ContractPulse - Your Federal Contract Intelligence Starts Here</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background: linear-gradient(135deg, #0B3D2E 0%, #1a5c47 100%);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #0B3D2E 0%, #134238 50%, #1a5c47 100%);
+            border-radius: 0;
+        }
+        
+        .header {
+            background: rgba(212, 168, 83, 0.1);
+            border-bottom: 1px solid rgba(212, 168, 83, 0.2);
+            padding: 30px 40px;
+            text-align: center;
+        }
+        
+        .logo {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            background: #D4A853;
+            border-radius: 8px;
+            color: #0B3D2E;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 60px;
+            margin-bottom: 20px;
+        }
+        
+        .hero {
+            padding: 40px 40px 30px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.02);
+        }
+        
+        .hero h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 16px;
+            color: #ffffff;
+            line-height: 1.2;
+        }
+        
+        .hero .highlight {
+            color: #D4A853;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            color: #a0a0a0;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .welcome-stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            padding: 0 20px;
+        }
+        
+        .stat {
+            text-align: center;
+            padding: 20px 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            border: 1px solid rgba(212, 168, 83, 0.1);
+            flex: 1;
+            margin: 0 5px;
+        }
+        
+        .stat-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #D4A853;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: #a0a0a0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .content {
+            padding: 30px 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            font-size: 22px;
+            font-weight: bold;
+            color: #D4A853;
+            margin-bottom: 16px;
+        }
+        
+        .section p {
+            color: #cccccc;
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+        
+        .preview-box {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(212, 168, 83, 0.2);
+            border-radius: 8px;
+            padding: 24px;
+            margin: 20px 0;
+        }
+        
+        .preview-header {
+            font-size: 16px;
+            font-weight: bold;
+            color: #D4A853;
+            margin-bottom: 16px;
+        }
+        
+        .contract-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .contract-item:last-child {
+            border-bottom: none;
+        }
+        
+        .contract-name {
+            color: #ffffff;
+            font-size: 14px;
+        }
+        
+        .contract-value {
+            color: #D4A853;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, rgba(212, 168, 83, 0.1) 0%, rgba(212, 168, 83, 0.05) 100%);
+            border: 1px solid rgba(212, 168, 83, 0.2);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #D4A853;
+            color: #0B3D2E;
+            text-decoration: none;
+            padding: 16px 32px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background: #c49a4a;
+            transform: translateY(-1px);
+        }
+        
+        .cta-button.secondary {
+            background: transparent;
+            color: #D4A853;
+            border: 2px solid #D4A853;
+        }
+        
+        .cta-button.secondary:hover {
+            background: #D4A853;
+            color: #0B3D2E;
+        }
+        
+        .footer {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 30px 40px;
+            text-align: center;
+            border-top: 1px solid rgba(212, 168, 83, 0.1);
+        }
+        
+        .footer p {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .footer a {
+            color: #D4A853;
+            text-decoration: none;
+        }
+        
+        .social-links {
+            margin: 20px 0;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 8px;
+            background: rgba(212, 168, 83, 0.1);
+            border-radius: 50%;
+            color: #D4A853;
+            text-decoration: none;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                margin: 0;
+                border-radius: 0;
+            }
+            
+            .hero, .content, .header, .footer {
+                padding: 20px !important;
+            }
+            
+            .hero h1 {
+                font-size: 24px;
+            }
+            
+            .welcome-stats {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .stat {
+                margin: 0 0 10px 0;
+            }
+            
+            .cta-button {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">CP</div>
+            <h3 style="color: #ffffff; margin: 0;">ContractPulse</h3>
+            <p style="color: #a0a0a0; margin: 10px 0 0 0; font-size: 14px;">Federal Contract Intelligence</p>
+        </div>
+        
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>Welcome to <span class="highlight">ContractPulse</span></h1>
+            <p>You're now part of an exclusive community of government contractors who start every week with insider intelligence on the $650 billion federal market.</p>
+            
+            <div class="welcome-stats">
+                <div class="stat">
+                    <div class="stat-number">$650B</div>
+                    <div class="stat-label">Annual Market</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Contractors</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">Weekly</div>
+                    <div class="stat-label">Intelligence</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            <div class="section">
+                <h2>What You'll Get Every Monday</h2>
+                <p>Each ContractPulse weekly edition delivers five critical signals that matter for your federal contracting success:</p>
+                
+                <div style="margin-left: 20px;">
+                    <p><strong style="color: #D4A853;">🎯 Signal of the Week</strong><br>
+                    The one contract award, policy change, or trend that matters most this week</p>
+                    
+                    <p><strong style="color: #D4A853;">📋 Top Contract Awards</strong><br>
+                    5-7 notable awards with dollar amounts, agencies, and winning strategies</p>
+                    
+                    <p><strong style="color: #D4A853;">👤 Who's Moving</strong><br>
+                    Key personnel changes in federal procurement that shift buying power</p>
+                    
+                    <p><strong style="color: #D4A853;">⚖️ Policy Watch</strong><br>
+                    Procurement policy changes and regulatory updates before they impact you</p>
+                    
+                    <p><strong style="color: #D4A853;">📊 Numbers That Matter</strong><br>
+                    3-4 key data points that reveal the real spending trends</p>
+                </div>
+            </div>
+            
+            <div class="preview-box">
+                <div class="preview-header">This Week's Top Opportunities Preview:</div>
+                <div class="contract-item">
+                    <span class="contract-name">DoD Enterprise Infrastructure Solutions</span>
+                    <span class="contract-value">$1.2B</span>
+                </div>
+                <div class="contract-item">
+                    <span class="contract-name">DHS Cybersecurity Infrastructure</span>
+                    <span class="contract-value">$847M</span>
+                </div>
+                <div class="contract-item">
+                    <span class="contract-name">VA Healthcare AI Implementation</span>
+                    <span class="contract-value">$412M</span>
+                </div>
+                <div class="contract-item">
+                    <span class="contract-name">NASA Artemis Mission Support</span>
+                    <span class="contract-value">$267M</span>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Your Next Steps</h2>
+                <p>While you wait for your first issue this Monday, explore our comprehensive guides that have helped contractors win over $2.1 billion in federal contracts:</p>
+            </div>
+            
+            <div class="cta-section">
+                <h3 style="color: #D4A853; margin-bottom: 20px;">Start Learning Today</h3>
+                <a href="https://contractpulse.io/blog/how-to-find-government-contracts-2026-guide" class="cta-button">
+                    Read: Complete Government Contracting Guide
+                </a>
+                <a href="https://contractpulse.io/blog/sam-gov-registration-guide-new-contractors" class="cta-button secondary">
+                    Master SAM.gov Registration
+                </a>
+            </div>
+            
+            <div class="section">
+                <h2>Questions? We're Here to Help</h2>
+                <p>Reply to this email with any questions about federal contracting. Our research team personally reads every message and provides detailed responses within 24 hours.</p>
+                
+                <p><strong style="color: #D4A853;">Common questions we answer:</strong></p>
+                <ul style="color: #cccccc; margin-left: 20px; margin-top: 10px;">
+                    <li>Which agencies should I target for my services?</li>
+                    <li>How do I interpret NAICS codes for my business?</li>
+                    <li>What's the realistic timeline to my first contract?</li>
+                    <li>Should I pursue prime contracts or start as a subcontractor?</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <div class="social-links">
+                <a href="#" title="Twitter">𝕏</a>
+                <a href="#" title="LinkedIn">in</a>
+                <a href="#" title="Website">🌐</a>
+            </div>
+            
+            <p><strong>ContractPulse</strong> - Federal Contract Intelligence</p>
+            <p>Built by contractors, for contractors</p>
+            
+            <p style="margin-top: 20px;">
+                <a href="{{unsubscribe_url}}">Unsubscribe</a> | 
+                <a href="https://contractpulse.io/privacy">Privacy Policy</a> | 
+                <a href="https://contractpulse.io/terms">Terms</a>
+            </p>
+            
+            <p style="font-size: 12px; color: #666; margin-top: 20px;">
+                © 2026 SignalStack Media LLC. All rights reserved.<br>
+                You're receiving this because you subscribed to ContractPulse at contractpulse.io
+            </p>
+        </div>
+    </div>
+</body>
+</html>

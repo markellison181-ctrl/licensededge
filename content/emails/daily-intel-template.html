@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContractPulse Pro Daily Intel - {DATE}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background: linear-gradient(135deg, #0B3D2E 0%, #1a5c47 100%);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #0B3D2E 0%, #134238 50%, #1a5c47 100%);
+            border-radius: 0;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, rgba(212, 168, 83, 0.15) 0%, rgba(212, 168, 83, 0.05) 100%);
+            border-bottom: 2px solid #D4A853;
+            padding: 20px 30px;
+        }
+        
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo {
+            width: 35px;
+            height: 35px;
+            background: linear-gradient(135deg, #D4A853 0%, #c49a4a 100%);
+            border-radius: 6px;
+            color: #0B3D2E;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 35px;
+            text-align: center;
+        }
+        
+        .logo-text {
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .pro-badge {
+            background: #D4A853;
+            color: #0B3D2E;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .date-info {
+            color: #a0a0a0;
+            font-size: 14px;
+            text-align: center;
+        }
+        
+        .urgent-banner {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, rgba(239, 68, 68, 0.05) 100%);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin: 20px;
+            text-align: center;
+        }
+        
+        .urgent-text {
+            color: #f87171;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .content {
+            padding: 20px 30px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .section-icon {
+            font-size: 16px;
+        }
+        
+        .section-title {
+            color: #D4A853;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .opportunities-grid {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(212, 168, 83, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .opportunity-item {
+            padding: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            transition: background-color 0.2s ease;
+        }
+        
+        .opportunity-item:last-child {
+            border-bottom: none;
+        }
+        
+        .opportunity-item:hover {
+            background: rgba(212, 168, 83, 0.03);
+        }
+        
+        .opp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        
+        .opp-agency {
+            background: #D4A853;
+            color: #0B3D2E;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .opp-value {
+            color: #D4A853;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .opp-title {
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        
+        .opp-details {
+            color: #a0a0a0;
+            font-size: 13px;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .opp-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+        }
+        
+        .opp-deadline {
+            color: #f59e0b;
+            font-weight: 600;
+        }
+        
+        .opp-tags {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        
+        .opp-tag {
+            background: rgba(212, 168, 83, 0.15);
+            color: #D4A853;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 10px;
+            font-weight: 500;
+        }
+        
+        .market-update {
+            background: linear-gradient(135deg, rgba(212, 168, 83, 0.08) 0%, rgba(212, 168, 83, 0.02) 100%);
+            border: 1px solid rgba(212, 168, 83, 0.2);
+            border-radius: 8px;
+            padding: 20px;
+        }
+        
+        .update-title {
+            color: #D4A853;
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        
+        .update-content {
+            color: #cccccc;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        
+        .stats-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .stat-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(212, 168, 83, 0.15);
+            border-radius: 6px;
+            padding: 15px;
+            text-align: center;
+            flex: 1;
+        }
+        
+        .stat-number {
+            color: #D4A853;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        
+        .stat-label {
+            color: #a0a0a0;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .action-items {
+            background: rgba(59, 130, 246, 0.05);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 8px;
+            padding: 20px;
+        }
+        
+        .action-title {
+            color: #60a5fa;
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        
+        .action-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .action-item {
+            padding: 8px 0;
+            color: #cccccc;
+            font-size: 14px;
+            line-height: 1.5;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .action-item:before {
+            content: "→";
+            color: #60a5fa;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .cta-compact {
+            background: linear-gradient(135deg, rgba(212, 168, 83, 0.1) 0%, rgba(212, 168, 83, 0.05) 100%);
+            border: 1px solid rgba(212, 168, 83, 0.3);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            margin: 25px 0;
+        }
+        
+        .cta-text {
+            color: #cccccc;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #D4A853;
+            color: #0B3D2E;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background: #c49a4a;
+            transform: translateY(-1px);
+        }
+        
+        .footer-compact {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px 30px;
+            text-align: center;
+            border-top: 1px solid rgba(212, 168, 83, 0.1);
+        }
+        
+        .footer-text {
+            color: #888;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #D4A853;
+            text-decoration: none;
+            margin: 0 6px;
+            font-size: 12px;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                margin: 0;
+            }
+            
+            .header, .content {
+                padding: 15px 20px !important;
+            }
+            
+            .urgent-banner, .cta-compact {
+                margin: 15px 10px !important;
+            }
+            
+            .header-top {
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+            }
+            
+            .stats-row {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .opp-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+            
+            .opp-meta {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-top">
+                <div class="logo-section">
+                    <div class="logo">CP</div>
+                    <div class="logo-text">Daily Intel</div>
+                </div>
+                <div class="pro-badge">PRO</div>
+            </div>
+            <div class="date-info">{DATE} • Federal Contract Intelligence</div>
+        </div>
+
+        <!-- Urgent Alert (conditional) -->
+        <div class="urgent-banner" style="{URGENT_DISPLAY}">
+            <div class="urgent-text">🚨 URGENT: {URGENT_MESSAGE}</div>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Today's Opportunities -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-icon">🎯</span>
+                    <div class="section-title">Today's Targeted Opportunities</div>
+                </div>
+                
+                <div class="opportunities-grid">
+                    <div class="opportunity-item">
+                        <div class="opp-header">
+                            <div class="opp-agency">{OPP_AGENCY_1}</div>
+                            <div class="opp-value">{OPP_VALUE_1}</div>
+                        </div>
+                        <div class="opp-title">{OPP_TITLE_1}</div>
+                        <div class="opp-details">{OPP_DETAILS_1}</div>
+                        <div class="opp-meta">
+                            <div class="opp-deadline">Due: {OPP_DEADLINE_1}</div>
+                            <div class="opp-tags">
+                                <span class="opp-tag">{OPP_TAG1_1}</span>
+                                <span class="opp-tag">{OPP_TAG2_1}</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="opportunity-item">
+                        <div class="opp-header">
+                            <div class="opp-agency">{OPP_AGENCY_2}</div>
+                            <div class="opp-value">{OPP_VALUE_2}</div>
+                        </div>
+                        <div class="opp-title">{OPP_TITLE_2}</div>
+                        <div class="opp-details">{OPP_DETAILS_2}</div>
+                        <div class="opp-meta">
+                            <div class="opp-deadline">Due: {OPP_DEADLINE_2}</div>
+                            <div class="opp-tags">
+                                <span class="opp-tag">{OPP_TAG1_2}</span>
+                                <span class="opp-tag">{OPP_TAG2_2}</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="opportunity-item">
+                        <div class="opp-header">
+                            <div class="opp-agency">{OPP_AGENCY_3}</div>
+                            <div class="opp-value">{OPP_VALUE_3}</div>
+                        </div>
+                        <div class="opp-title">{OPP_TITLE_3}</div>
+                        <div class="opp-details">{OPP_DETAILS_3}</div>
+                        <div class="opp-meta">
+                            <div class="opp-deadline">Due: {OPP_DEADLINE_3}</div>
+                            <div class="opp-tags">
+                                <span class="opp-tag">{OPP_TAG1_3}</span>
+                                <span class="opp-tag">{OPP_TAG2_3}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <div class="stat-number">{DAILY_STAT_1}</div>
+                        <div class="stat-label">{DAILY_LABEL_1}</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">{DAILY_STAT_2}</div>
+                        <div class="stat-label">{DAILY_LABEL_2}</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">{DAILY_STAT_3}</div>
+                        <div class="stat-label">{DAILY_LABEL_3}</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Market Update -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-icon">📈</span>
+                    <div class="section-title">Market Update</div>
+                </div>
+                
+                <div class="market-update">
+                    <div class="update-title">{UPDATE_TITLE}</div>
+                    <div class="update-content">{UPDATE_CONTENT}</div>
+                </div>
+            </div>
+
+            <!-- Action Items -->
+            <div class="section">
+                <div class="action-items">
+                    <div class="action-title">📝 Today's Action Items</div>
+                    <ul class="action-list">
+                        <li class="action-item">{ACTION_ITEM_1}</li>
+                        <li class="action-item">{ACTION_ITEM_2}</li>
+                        <li class="action-item">{ACTION_ITEM_3}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="cta-compact">
+                <div class="cta-text">Need help with any of these opportunities?</div>
+                <a href="mailto:pro@contractpulse.io" class="cta-button">Contact Pro Support</a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-compact">
+            <div class="footer-text">ContractPulse Pro - Daily Federal Contract Intelligence</div>
+            <div>
+                <a href="https://contractpulse.io/pro/dashboard">Dashboard</a>
+                <a href="https://contractpulse.io/pro/settings">Settings</a>
+                <a href="{{unsubscribe_url}}">Unsubscribe</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
