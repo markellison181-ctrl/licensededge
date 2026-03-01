@@ -63,7 +63,7 @@ export default function OpenDispensaryPost() {
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">Phase 1: Planning & Research (Months 1-3)</h2>
 
           <p className="text-gray-300 leading-relaxed text-lg">
-            <strong className="text-white">Step 1: Choose your state and municipality.</strong> Not all legal states are created equal. Consider: How many licenses are available? What are the application costs? Is the market oversaturated or underserved? What&apos;s the tax structure? States like Michigan (open licensing) offer easier entry but more competition. States like Illinois (limited licensing) are harder to enter but offer more pricing power.
+            <strong className="text-white">Step 1: Choose your state and municipality.</strong> Not all legal states are created equal. Consider: How many licenses are available? What are the application costs? Is the market oversaturated or underserved? What&apos;s the tax structure? States like Michigan (open licensing) offer easier entry but more competition. States like Illinois (limited licensing) are harder to enter but offer more pricing power. Our <Link href="/blog/cannabis-industry-trends-market-size-growth" className="text-gold underline hover:text-gold-300">cannabis industry trends analysis</Link> breaks down which markets are growing fastest.
           </p>
 
           <p className="text-gray-300 leading-relaxed text-lg">

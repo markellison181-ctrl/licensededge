@@ -70,7 +70,7 @@ export default function CannabisLicenseGuidePost() {
           </p>
 
           <p className="text-gray-300 leading-relaxed text-lg">
-            However, cannabis licensing remains one of the most complex regulatory environments in any industry. Each state has its own licensing categories, application requirements, fee structures, and approval processes. What works in Michigan won&apos;t work in New York, and what&apos;s required in California is different from Florida.
+            However, cannabis licensing remains one of the most complex regulatory environments in any industry. Each state has its own licensing categories, application requirements, fee structures, and approval processes. What works in Michigan won&apos;t work in New York, and what&apos;s required in California is different from Florida. For the bigger picture on where the industry is headed, see our <Link href="/blog/cannabis-industry-trends-market-size-growth" className="text-gold underline hover:text-gold-300">cannabis industry trends and market analysis</Link>. If you&apos;re specifically looking to open a dispensary, our <Link href="/blog/how-to-open-dispensary-2026" className="text-gold underline hover:text-gold-300">complete dispensary guide</Link> walks through the process step by step.
           </p>
 
           <p className="text-gray-300 leading-relaxed text-lg">

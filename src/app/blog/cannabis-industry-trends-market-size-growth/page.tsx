@@ -93,7 +93,7 @@ export default function CannabisIndustryTrendsPost() {
           </div>
 
           <p className="text-gray-300 leading-relaxed text-lg">
-            Notable trends: <strong className="text-white">New York</strong> finally hit its stride after a rocky adult-use rollout, growing 85% as hundreds of licensed dispensaries opened. <strong className="text-white">Ohio</strong> was the growth story of 2025, launching adult-use sales mid-year and immediately becoming a top-10 market. <strong className="text-white">Colorado</strong>&apos;s decline reflects market maturation and price compression in one of the oldest legal markets.
+            Notable trends: <strong className="text-white">New York</strong> finally hit its stride after a rocky adult-use rollout, growing 85% as hundreds of licensed dispensaries opened. <strong className="text-white">Ohio</strong> was the growth story of 2025, launching adult-use sales mid-year and immediately becoming a top-10 market. <strong className="text-white">Colorado</strong>&apos;s decline reflects market maturation and price compression in one of the oldest legal markets. Thinking about entering one of these growing markets? Check out our guide on <Link href="/blog/how-to-open-dispensary-2026" className="text-gold underline hover:text-gold-300">how to open a dispensary in 2026</Link> and our <Link href="/blog/cannabis-license-application-guide-state-by-state" className="text-gold underline hover:text-gold-300">state-by-state license application guide</Link>.
           </p>
 
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">Product Category Trends</h2>
