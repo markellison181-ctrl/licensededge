@@ -87,7 +87,7 @@ export default function ReferralLeaderboard() {
           🏆 Referral Champions
         </h2>
         <p className="text-gray-400 max-w-2xl mx-auto">
-          Top referrers who are helping grow the ContractPulse community. Join them by sharing with your network!
+          Top referrers who are helping grow the LicensedEdge community. Join them by sharing with your network!
         </p>
         {stats && (
           <p className="text-gray-500 text-sm mt-2">

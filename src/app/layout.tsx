@@ -7,48 +7,48 @@ import MobileNav from "./MobileNav";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ContractPulse — Canadian Government Contract Intelligence",
+  title: "LicensedEdge — Cannabis Regulation Intelligence",
   description:
-    "Weekly intelligence on Canadian federal government contract awards, procurement trends, and policy changes. Built for contractors, consultants, and lobbyists.",
+    "Weekly intelligence on cannabis licensing, regulatory changes, and market entry strategies across all legal states. Built for operators, compliance officers, and investors.",
   keywords: [
-    "government contracts",
-    "federal procurement", 
-    "contract awards",
-    "government contracting",
-    "procurement intelligence",
-    "SAM.gov",
-    "GSA contracts",
-    "federal opportunities"
+    "cannabis licensing",
+    "cannabis regulation",
+    "cannabis compliance",
+    "cannabis license applications",
+    "cannabis regulatory intelligence",
+    "cannabis market entry",
+    "cannabis operators",
+    "cannabis newsletter"
   ],
   authors: [{ name: "SignalStack Media" }],
   creator: "SignalStack Media",
   publisher: "SignalStack Media",
-  metadataBase: new URL("https://contractpulse.io"),
+  metadataBase: new URL("https://licensededge.com"),
   alternates: {
-    canonical: "https://contractpulse.io",
+    canonical: "https://licensededge.com",
   },
   openGraph: {
-    title: "ContractPulse — Know Who's Winning Government Contracts Before Your Competitors",
+    title: "LicensedEdge — Stay Ahead in Cannabis Regulation",
     description:
-      "Weekly intelligence on Canadian federal government contract awards, procurement trends, and policy changes. Free weekly digest + Pro daily alerts.",
+      "Weekly intelligence on cannabis licensing, regulatory changes, and market entry strategies across all legal states. Free weekly digest + Pro daily alerts.",
     type: "website",
-    url: "https://contractpulse.io",
-    siteName: "ContractPulse",
-    locale: "en_CA",
+    url: "https://licensededge.com",
+    siteName: "LicensedEdge",
+    locale: "en_US",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "ContractPulse - Government Contract Intelligence",
+        alt: "LicensedEdge - Cannabis Regulation Intelligence",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ContractPulse — Know Who's Winning Government Contracts Before Your Competitors",
+    title: "LicensedEdge — Stay Ahead in Cannabis Regulation",
     description:
-      "Weekly intelligence on Canadian federal government contract awards, procurement trends, and policy changes. Free weekly digest + Pro daily alerts.",
+      "Weekly intelligence on cannabis licensing, regulatory changes, and market entry strategies across all legal states. Free weekly digest + Pro daily alerts.",
     images: ["/og-image.png"],
     creator: "@SignalStackHQ",
     site: "@SignalStackHQ",
@@ -64,9 +64,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    // Add Google Search Console verification when ready
-  },
 };
 
 function Header() {
@@ -75,20 +72,20 @@ function Header() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5">
           <div className="w-8 h-8 bg-gold rounded-sm flex items-center justify-center">
-            <span className="text-forest font-bold text-sm">CP</span>
+            <span className="text-forest font-bold text-sm">LE</span>
           </div>
           <span className="text-white font-semibold text-xl tracking-tight">
-            Contract<span className="text-gold">Pulse</span>
+            Licensed<span className="text-gold">Edge</span>
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-8">
-          <Link href="/archive" className="text-gray-300 hover:text-gold transition-colors text-sm">
+          <Link href="/archive" className="text-gray-200 hover:text-gold transition-colors text-sm">
             Archive
           </Link>
-          <Link href="/pricing" className="text-gray-300 hover:text-gold transition-colors text-sm">
+          <Link href="/pricing" className="text-gray-200 hover:text-gold transition-colors text-sm">
             Pricing
           </Link>
-          <Link href="/archive/blog/track-federal-government-contracts-canada" className="text-gray-300 hover:text-gold transition-colors text-sm">
+          <Link href="/blog" className="text-gray-200 hover:text-gold transition-colors text-sm">
             Blog
           </Link>
           <Link
@@ -112,47 +109,45 @@ function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-6 h-6 bg-gold rounded-sm flex items-center justify-center">
-                <span className="text-forest font-bold text-xs">CP</span>
+                <span className="text-forest font-bold text-xs">LE</span>
               </div>
               <span className="text-white font-semibold">
-                Contract<span className="text-gold">Pulse</span>
+                Licensed<span className="text-gold">Edge</span>
               </span>
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Canadian government contract intelligence, delivered weekly.
+            <p className="text-gray-300 text-sm leading-relaxed">
+              Cannabis regulation intelligence, delivered weekly.
             </p>
-            <p className="text-gray-500 text-xs mt-4">
+            <p className="text-gray-400 text-xs mt-4">
               A <a href="https://signalstackmedia.com" className="text-gold hover:text-gold-300 transition-colors">SignalStack</a> newsletter.
             </p>
           </div>
           <div>
             <h4 className="text-gold/80 font-semibold mb-4 label-uppercase">Content</h4>
             <ul className="space-y-2">
-              <li><Link href="/archive" className="text-gray-400 hover:text-gold transition-colors text-sm">Newsletter Archive</Link></li>
-              <li><Link href="/archive/sample" className="text-gray-400 hover:text-gold transition-colors text-sm">Sample Issue</Link></li>
-              <li><Link href="/archive/blog/track-federal-government-contracts-canada" className="text-gray-400 hover:text-gold transition-colors text-sm">Blog</Link></li>
+              <li><Link href="/archive" className="text-gray-300 hover:text-gold transition-colors text-sm">Newsletter Archive</Link></li>
+              <li><Link href="/archive/sample" className="text-gray-300 hover:text-gold transition-colors text-sm">Sample Issue</Link></li>
+              <li><Link href="/blog" className="text-gray-300 hover:text-gold transition-colors text-sm">Blog</Link></li>
             </ul>
           </div>
           <div>
             <h4 className="text-gold/80 font-semibold mb-4 label-uppercase">Product</h4>
             <ul className="space-y-2">
-              <li><Link href="/pricing" className="text-gray-400 hover:text-gold transition-colors text-sm">Pricing</Link></li>
-              <li><Link href="/#subscribe" className="text-gray-400 hover:text-gold transition-colors text-sm">Subscribe</Link></li>
+              <li><Link href="/pricing" className="text-gray-300 hover:text-gold transition-colors text-sm">Pricing</Link></li>
+              <li><Link href="/#subscribe" className="text-gray-300 hover:text-gold transition-colors text-sm">Subscribe</Link></li>
             </ul>
           </div>
           <div>
             <h4 className="text-gold/80 font-semibold mb-4 label-uppercase">Legal</h4>
             <ul className="space-y-2">
-              <li><Link href="/terms" className="text-gray-400 hover:text-gold transition-colors text-sm">Terms of Service</Link></li>
-              <li><Link href="/privacy" className="text-gray-400 hover:text-gold transition-colors text-sm">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="text-gray-300 hover:text-gold transition-colors text-sm">Terms of Service</Link></li>
+              <li><Link href="/privacy" className="text-gray-300 hover:text-gold transition-colors text-sm">Privacy Policy</Link></li>
             </ul>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-forest-50/20 text-center">
-          <p className="text-gray-500 text-sm">
+          <p className="text-gray-400 text-sm">
             © {new Date().getFullYear()} SignalStack Media Inc. All rights reserved.
-            <br />
-            181 Bay Street, Suite 1400, Toronto ON M5J 2T3, Canada
           </p>
         </div>
       </div>

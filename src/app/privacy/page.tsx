@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — ContractPulse",
-  description: "Privacy Policy for ContractPulse by SignalStack Media — PIPEDA and CASL compliant.",
+  title: "Privacy Policy — LicensedEdge",
+  description: "Privacy Policy for LicensedEdge by SignalStack Media — PIPEDA and CASL compliant.",
 };
 
 export default function PrivacyPage() {
@@ -13,7 +13,7 @@ export default function PrivacyPage() {
       <div className="space-y-8 text-gray-300 leading-relaxed text-sm">
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">1. Introduction</h2>
-          <p>SignalStack Media Inc. (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) operates ContractPulse (contractpulse.io). This Privacy Policy explains how we collect, use, disclose, and protect your personal information in compliance with the Personal Information Protection and Electronic Documents Act (PIPEDA) and Canada&apos;s Anti-Spam Legislation (CASL).</p>
+          <p>SignalStack Media Inc. (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) operates LicensedEdge (licensededge.io). This Privacy Policy explains how we collect, use, disclose, and protect your personal information in compliance with the Personal Information Protection and Electronic Documents Act (PIPEDA) and Canada&apos;s Anti-Spam Legislation (CASL).</p>
           <p className="mt-3">SignalStack Media Inc. is located at 181 Bay Street, Suite 1400, Toronto, ON M5J 2T3, Canada.</p>
         </section>
         <section>
@@ -27,7 +27,7 @@ export default function PrivacyPage() {
         </section>
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">4. Consent</h2>
-          <p>By subscribing, you provide express consent to receive commercial electronic messages per CASL. You may withdraw consent at any time by clicking unsubscribe in any email, emailing privacy@contractpulse.io, or writing to our mailing address. Withdrawal is processed within 10 business days.</p>
+          <p>By subscribing, you provide express consent to receive commercial electronic messages per CASL. You may withdraw consent at any time by clicking unsubscribe in any email, emailing privacy@licensededge.io, or writing to our mailing address. Withdrawal is processed within 10 business days.</p>
         </section>
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">5. Disclosure</h2>
@@ -47,7 +47,7 @@ export default function PrivacyPage() {
         </section>
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">9. Your Rights (PIPEDA)</h2>
-          <p>You may request access to your personal information, request correction of inaccuracies, withdraw consent (subject to legal restrictions), and file a complaint with the Office of the Privacy Commissioner of Canada. Contact our Privacy Officer at privacy@contractpulse.io. We respond within 30 days.</p>
+          <p>You may request access to your personal information, request correction of inaccuracies, withdraw consent (subject to legal restrictions), and file a complaint with the Office of the Privacy Commissioner of Canada. Contact our Privacy Officer at privacy@licensededge.io. We respond within 30 days.</p>
         </section>
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">10. Cookies</h2>
@@ -55,7 +55,7 @@ export default function PrivacyPage() {
         </section>
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">11. Contact</h2>
-          <p>Privacy Officer, SignalStack Media Inc.<br />181 Bay Street, Suite 1400, Toronto, ON M5J 2T3<br />Email: privacy@contractpulse.io</p>
+          <p>Privacy Officer, SignalStack Media Inc.<br />181 Bay Street, Suite 1400, Toronto, ON M5J 2T3<br />Email: privacy@licensededge.io</p>
           <p className="mt-3">Complaints: Office of the Privacy Commissioner of Canada — www.priv.gc.ca</p>
         </section>
       </div>

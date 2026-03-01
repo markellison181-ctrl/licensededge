@@ -56,7 +56,7 @@ export default function StickyBottomCTA() {
               <span className="sm:hidden">Get daily contract alerts</span>
               <span className="text-gold ml-2">→ Subscribe Free</span>
             </p>
-            <p className="text-gray-400 text-xs hidden md:block">
+            <p className="text-gray-300 text-xs hidden md:block">
               Join 500+ government contractors getting the edge
             </p>
           </div>
@@ -76,7 +76,7 @@ export default function StickyBottomCTA() {
             {/* Dismiss button */}
             <button
               onClick={handleDismiss}
-              className="text-gray-400 hover:text-white transition-colors p-1"
+              className="text-gray-300 hover:text-white transition-colors p-1"
               aria-label="Dismiss notification"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

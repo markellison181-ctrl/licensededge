@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ReferralLeaderboard from "./ReferralLeaderboard";
 
 export const metadata: Metadata = {
-  title: "Community — ContractPulse",
-  description: "Join the ContractPulse community. See top referrers, share insights, and connect with government contractors.",
+  title: "Community — LicensedEdge",
+  description: "Join the LicensedEdge community. See top referrers, share insights, and connect with government contractors.",
 };
 
 export default function CommunityPage() {
@@ -47,7 +47,7 @@ export default function CommunityPage() {
           </div>
           
           <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight bg-gradient-to-r from-white via-gold to-white bg-clip-text text-transparent">
-            ContractPulse Community
+            LicensedEdge Community
           </h1>
           <p className="text-gray-300 max-w-3xl mx-auto text-xl leading-relaxed mb-8">
             Join thousands of government contractors sharing insights, celebrating wins, and growing together. 
@@ -85,7 +85,7 @@ export default function CommunityPage() {
               How Referrals Work
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Share ContractPulse with your network and earn free months when they upgrade to Pro or Enterprise.
+              Share LicensedEdge with your network and earn free months when they upgrade to Pro or Enterprise.
             </p>
           </div>
           
@@ -122,7 +122,7 @@ export default function CommunityPage() {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Earn Free Months</h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                For every 3 successful referrals, earn 1 month free on your ContractPulse subscription. Credits are applied automatically to your account.
+                For every 3 successful referrals, earn 1 month free on your LicensedEdge subscription. Credits are applied automatically to your account.
               </p>
             </div>
           </div>
@@ -133,7 +133,7 @@ export default function CommunityPage() {
           <div className="bg-gradient-to-br from-gold/20 via-gold/10 to-transparent backdrop-blur-xl border border-gold/30 rounded-2xl p-12 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-white mb-4">Ready to Start Referring?</h3>
             <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-              Subscribe to ContractPulse Pro to get your unique referral link and start earning free months by sharing with your network.
+              Subscribe to LicensedEdge Pro to get your unique referral link and start earning free months by sharing with your network.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 

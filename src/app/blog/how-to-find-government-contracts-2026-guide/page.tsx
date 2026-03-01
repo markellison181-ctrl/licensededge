@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 
 export const metadata: Metadata = {
-  title: "How to Find Government Contracts: The Complete 2026 Guide | ContractPulse",
+  title: "How to Find Government Contracts: The Complete 2026 Guide | LicensedEdge",
   description: "Master federal procurement with our comprehensive guide. Learn SAM.gov navigation, GSA schedules, small business set-asides, and winning strategies that secure $50B+ annually.",
   keywords: "government contracts, federal procurement, SAM.gov, GSA schedule, small business contracting, NAICS codes, RFP responses",
   openGraph: {
@@ -11,11 +11,11 @@ export const metadata: Metadata = {
     description: "Master federal procurement with our comprehensive guide to securing government contracts",
     type: "article",
     publishedTime: "2026-02-28T12:00:00Z",
-    authors: ["ContractPulse Research Team"],
+    authors: ["LicensedEdge Research Team"],
     tags: ["Government Contracting", "Federal Procurement", "Business Strategy"],
   },
   alternates: {
-    canonical: "https://contractpulse.io/blog/how-to-find-government-contracts-2026-guide"
+    canonical: "https://licensededge.io/blog/how-to-find-government-contracts-2026-guide"
   }
 };
 
@@ -329,7 +329,7 @@ export default function GovernmentContractsGuidePage() {
             <blockquote className="text-2xl font-semibold text-gold mb-4">
               "SAM.gov registration is not optional—it's the price of admission to the $650 billion federal market."
             </blockquote>
-            <cite className="text-gray-400 text-sm">— ContractPulse Research Team</cite>
+            <cite className="text-gray-400 text-sm">— LicensedEdge Research Team</cite>
           </div>
 
           <div className="prose prose-invert prose-lg max-w-none">
@@ -404,7 +404,7 @@ export default function GovernmentContractsGuidePage() {
             <h3 className="text-2xl font-bold mb-4">Get Weekly Contract Intelligence</h3>
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
               Join <span className="text-gold font-semibold">500+ government contractors</span> who 
-              start every week with ContractPulse. We analyze SAM.gov postings so you don't have to.
+              start every week with LicensedEdge. We analyze SAM.gov postings so you don't have to.
             </p>
             
             <div className="bg-forest-500/50 border border-forest-50/20 rounded-lg p-6 mb-6 max-w-lg mx-auto">

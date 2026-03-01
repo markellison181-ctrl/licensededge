@@ -27,8 +27,8 @@ export default function SuccessContent() {
     return () => clearTimeout(timer);
   }, [sessionId]);
 
-  const shareText = "Just subscribed to @ContractPulse — finally, real intel on federal contracts. 🔥";
-  const shareUrl = "https://contractpulse.io";
+  const shareText = "Just subscribed to @LicensedEdge — finally, real intel on federal contracts. 🔥";
+  const shareUrl = "https://licensededge.io";
 
   return (
     <>
@@ -121,7 +121,7 @@ export default function SuccessContent() {
               🎉 You're In!
             </h1>
             <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white">
-              Welcome to ContractPulse Pro
+              Welcome to LicensedEdge Pro
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
               Your subscription is active and your 14-day free trial has begun. 
@@ -150,7 +150,7 @@ export default function SuccessContent() {
               <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-white via-gold to-white bg-clip-text text-transparent">
                 What happens next?
               </h2>
-              <p className="text-gray-300">Your ContractPulse Pro journey begins now</p>
+              <p className="text-gray-300">Your LicensedEdge Pro journey begins now</p>
             </div>
             
             <div className="grid md:grid-cols-3 gap-8 text-left">
@@ -206,7 +206,7 @@ export default function SuccessContent() {
         <div className="bg-gradient-to-b from-forest-500/80 to-forest-500/40 border border-gold/30 rounded-xl p-8 mb-12">
           <h2 className="text-2xl font-bold mb-6 text-center">Help spread the word</h2>
           <p className="text-gray-300 text-center mb-8 max-w-2xl mx-auto">
-            Love ContractPulse? Share it with your network and help other government contractors 
+            Love LicensedEdge? Share it with your network and help other government contractors 
             discover the intelligence they need to win more work.
           </p>
           
@@ -223,7 +223,7 @@ export default function SuccessContent() {
               Share on X
             </a>
             <a
-              href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent('ContractPulse - Federal Contract Intelligence')}&summary=${encodeURIComponent('Real-time intelligence on government contracts and procurement opportunities.')}`}
+              href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent('LicensedEdge - Federal Contract Intelligence')}&summary=${encodeURIComponent('Real-time intelligence on government contracts and procurement opportunities.')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-3 bg-[#0077B5] text-white px-6 py-3 rounded font-semibold hover:bg-[#005885] transition-colors"
@@ -268,9 +268,9 @@ export default function SuccessContent() {
             </Link>
           </div>
           <p className="text-gray-500 text-sm mt-6">
-            Questions? Reply to any ContractPulse email or email us at{" "}
-            <a href="mailto:support@contractpulse.io" className="text-gold hover:underline">
-              support@contractpulse.io
+            Questions? Reply to any LicensedEdge email or email us at{" "}
+            <a href="mailto:support@licensededge.io" className="text-gold hover:underline">
+              support@licensededge.io
             </a>
           </p>
         </div>

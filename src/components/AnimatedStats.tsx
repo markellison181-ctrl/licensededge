@@ -132,7 +132,7 @@ export default function AnimatedStats() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
             Powering smarter <span className="text-gold">cannabis operations</span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-300 max-w-2xl mx-auto">
             LicensedEdge processes regulatory data from 40+ legal states to give you
             the cannabis intelligence that matters.
           </p>
@@ -161,13 +161,13 @@ export default function AnimatedStats() {
           <div className="grid md:grid-cols-2 gap-8 text-center">
             <div className="space-y-2">
               <div className="text-lg font-semibold text-white">Real-time Processing</div>
-              <div className="text-gray-400 text-sm">
+              <div className="text-gray-300 text-sm">
                 Data refreshed daily from official state regulatory sources
               </div>
             </div>
             <div className="space-y-2">
               <div className="text-lg font-semibold text-white">Professional Network</div>
-              <div className="text-gray-400 text-sm">
+              <div className="text-gray-300 text-sm">
                 Trusted by operators, compliance officers, and cannabis professionals
               </div>
             </div>

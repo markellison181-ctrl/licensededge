@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — ContractPulse",
-  description: "Terms of Service for ContractPulse newsletter by SignalStack Media.",
+  title: "Terms of Service — LicensedEdge",
+  description: "Terms of Service for LicensedEdge newsletter by SignalStack Media.",
 };
 
 export default function TermsPage() {
@@ -14,11 +14,11 @@ export default function TermsPage() {
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">1. Agreement to Terms</h2>
           <p>These Terms of Service (&quot;Terms&quot;) constitute a legally binding agreement between you (&quot;Subscriber,&quot; &quot;you,&quot; or &quot;your&quot;) and SignalStack Media Inc. (&quot;SignalStack,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), a corporation incorporated under the laws of Ontario, Canada, with its principal office at 181 Bay Street, Suite 1400, Toronto, ON M5J 2T3.</p>
-          <p className="mt-3">By accessing ContractPulse (contractpulse.io), subscribing to our newsletter, or using any of our services, you agree to be bound by these Terms and our Privacy Policy.</p>
+          <p className="mt-3">By accessing LicensedEdge (licensededge.io), subscribing to our newsletter, or using any of our services, you agree to be bound by these Terms and our Privacy Policy.</p>
         </section>
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">2. Services</h2>
-          <p>ContractPulse is a niche intelligence newsletter service providing analysis of Canadian federal government contract awards, procurement trends, policy changes, and related data. Our services include free and paid newsletter subscriptions, web-based content and archives, searchable procurement data (Pro and Enterprise tiers), API access (Enterprise tier), and data export functionality.</p>
+          <p>LicensedEdge is a niche intelligence newsletter service providing analysis of Canadian federal government contract awards, procurement trends, policy changes, and related data. Our services include free and paid newsletter subscriptions, web-based content and archives, searchable procurement data (Pro and Enterprise tiers), API access (Enterprise tier), and data export functionality.</p>
         </section>
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">3. Subscription and Account</h2>
@@ -38,7 +38,7 @@ export default function TermsPage() {
         </section>
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">7. Data and Information Disclaimer</h2>
-          <p>ContractPulse provides analysis based on publicly available government procurement data. While we make reasonable efforts to ensure accuracy, we do not guarantee completeness or accuracy. Our content is for informational purposes only and does not constitute legal, financial, or professional advice. Contract values, dates, and details should be verified through official sources before making business decisions.</p>
+          <p>LicensedEdge provides analysis based on publicly available government procurement data. While we make reasonable efforts to ensure accuracy, we do not guarantee completeness or accuracy. Our content is for informational purposes only and does not constitute legal, financial, or professional advice. Contract values, dates, and details should be verified through official sources before making business decisions.</p>
         </section>
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">8. API Usage (Enterprise)</h2>
@@ -58,7 +58,7 @@ export default function TermsPage() {
         </section>
         <section>
           <h2 className="text-xl font-semibold text-white mb-3">12. Contact</h2>
-          <p>SignalStack Media Inc.<br />181 Bay Street, Suite 1400, Toronto, ON M5J 2T3<br />Email: hello@contractpulse.io</p>
+          <p>SignalStack Media Inc.<br />181 Bay Street, Suite 1400, Toronto, ON M5J 2T3<br />Email: hello@licensededge.io</p>
         </section>
       </div>
     </div>

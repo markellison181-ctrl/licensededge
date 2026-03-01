@@ -57,19 +57,19 @@ export async function POST(request: NextRequest) {
       body: JSON.stringify({
         personalizations: [{ to: [{ email: email.toLowerCase().trim() }] }],
         from: {
-          email: "hello@contractpulse.io",
-          name: "ContractPulse",
+          email: "hello@licensededge.io",
+          name: "LicensedEdge",
         },
-        subject: "Welcome to ContractPulse — Your Government Contract Intelligence",
+        subject: "Welcome to LicensedEdge — Your Government Contract Intelligence",
         content: [
           {
             type: "text/html",
             value: `
               <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
                 <div style="background-color: #0B3D2E; padding: 30px; border-radius: 8px;">
-                  <h1 style="color: #D4A853; margin: 0 0 20px;">Welcome to ContractPulse</h1>
+                  <h1 style="color: #D4A853; margin: 0 0 20px;">Welcome to LicensedEdge</h1>
                   <p style="color: #ffffff; line-height: 1.6;">
-                    You're now subscribed to the free weekly edition of ContractPulse — Canadian government contract intelligence delivered every Monday.
+                    You're now subscribed to the free weekly edition of LicensedEdge — Canadian government contract intelligence delivered every Monday.
                   </p>
                   <p style="color: #cccccc; line-height: 1.6;">
                     Every issue includes:<br/>
@@ -80,12 +80,12 @@ export async function POST(request: NextRequest) {
                     • Numbers That Matter — key data points
                   </p>
                   <p style="color: #ffffff; line-height: 1.6;">
-                    Your first issue arrives this Monday. In the meantime, <a href="https://contractpulse.io/archive/sample" style="color: #D4A853;">read our sample issue</a>.
+                    Your first issue arrives this Monday. In the meantime, <a href="https://licensededge.io/archive/sample" style="color: #D4A853;">read our sample issue</a>.
                   </p>
                   <p style="color: #999999; font-size: 12px; margin-top: 30px;">
-                    ContractPulse is a SignalStack Media newsletter.<br/>
+                    LicensedEdge is a SignalStack Media newsletter.<br/>
                     181 Bay Street, Suite 1400, Toronto ON M5J 2T3<br/>
-                    <a href="https://contractpulse.io/unsubscribe" style="color: #D4A853;">Unsubscribe</a>
+                    <a href="https://licensededge.io/unsubscribe" style="color: #D4A853;">Unsubscribe</a>
                   </p>
                 </div>
               </div>
@@ -97,7 +97,7 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({
       success: true,
-      message: "Successfully subscribed to ContractPulse!",
+      message: "Successfully subscribed to LicensedEdge!",
     });
   } catch (error) {
     console.error("Subscribe error:", error);

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Track Federal Government Contract Awards in Canada (2026 Guide) — ContractPulse",
+  title: "How to Track Federal Government Contract Awards in Canada (2026 Guide) — LicensedEdge",
   description: "A comprehensive guide to monitoring Canadian federal procurement using CanadaBuys, open data, MERX, and intelligence tools. Updated for 2026.",
   openGraph: {
     title: "How to Track Federal Government Contract Awards in Canada (2026 Guide)",
@@ -115,9 +115,9 @@ export default function BlogPost() {
           can signal upcoming policy changes, problem areas in procurement, or departments facing scrutiny.
         </p>
 
-        <h2 className="text-2xl font-bold text-white mt-10 mb-4">8. Intelligence Services (Like ContractPulse)</h2>
+        <h2 className="text-2xl font-bold text-white mt-10 mb-4">8. Intelligence Services (Like LicensedEdge)</h2>
         <p>
-          Tracking procurement manually is time-consuming. Intelligence services like ContractPulse 
+          Tracking procurement manually is time-consuming. Intelligence services like LicensedEdge 
           aggregate, analyze, and deliver procurement intelligence directly to your inbox. Instead of 
           checking multiple sources daily, you get curated signals, trend analysis, and actionable insights.
         </p>
@@ -125,8 +125,8 @@ export default function BlogPost() {
         <h2 className="text-2xl font-bold text-white mt-10 mb-4">Building Your Tracking System</h2>
         <p>The most effective approach combines multiple sources:</p>
         <ol className="list-decimal pl-6 space-y-3">
-          <li><strong className="text-white">Daily:</strong> Check CanadaBuys notifications and ContractPulse daily alerts (Pro)</li>
-          <li><strong className="text-white">Weekly:</strong> Review ContractPulse weekly digest for trends and analysis</li>
+          <li><strong className="text-white">Daily:</strong> Check CanadaBuys notifications and LicensedEdge daily alerts (Pro)</li>
+          <li><strong className="text-white">Weekly:</strong> Review LicensedEdge weekly digest for trends and analysis</li>
           <li><strong className="text-white">Monthly:</strong> Analyze proactive disclosure data for your target departments</li>
           <li><strong className="text-white">Quarterly:</strong> Review Open Canada datasets for spending trend analysis</li>
           <li><strong className="text-white">Ongoing:</strong> Monitor Buy Canadian policy developments and committee hearings</li>
@@ -135,7 +135,7 @@ export default function BlogPost() {
         <div className="mt-12 bg-gold/5 border border-gold/20 rounded-lg p-8">
           <h3 className="text-xl font-bold text-white mb-3">Get This Intelligence Delivered</h3>
           <p className="text-gray-400 mb-4">
-            ContractPulse does the tracking for you. Weekly intelligence on contract awards, 
+            LicensedEdge does the tracking for you. Weekly intelligence on contract awards, 
             procurement trends, policy changes, and personnel moves — delivered every Monday.
           </p>
           <Link href="/#subscribe" className="inline-flex items-center gap-2 bg-gold text-forest px-6 py-3 rounded font-semibold text-sm hover:bg-gold-300 transition-colors">

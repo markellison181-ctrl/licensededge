@@ -24,7 +24,7 @@ export default function NewsletterPreview() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
             This is what you&apos;ll get <span className="text-gold">every week</span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-300 max-w-2xl mx-auto">
             See exactly what LicensedEdge delivers to your inbox. Here&apos;s a preview
             of our latest issue with real cannabis regulatory intelligence.
           </p>
@@ -62,7 +62,7 @@ export default function NewsletterPreview() {
                     </div>
                     <div>
                       <div className="text-lg font-bold text-gray-900">LicensedEdge Weekly</div>
-                      <div className="text-gray-500 text-sm">Issue #23 — March 6, 2026</div>
+                      <div className="text-gray-400 text-sm">Issue #23 — March 6, 2026</div>
                     </div>
                   </div>
                   <h1 className="text-xl md:text-2xl font-bold text-gray-900 leading-tight">
@@ -98,21 +98,21 @@ export default function NewsletterPreview() {
                     <div className="flex justify-between items-start border-b border-gray-100 pb-2">
                       <div>
                         <div className="font-medium text-gray-900 text-sm">New York Social Equity Application Period 2 — OCM</div>
-                        <div className="text-gray-500 text-xs">150 additional CAURD licenses for rural areas</div>
+                        <div className="text-gray-400 text-xs">150 additional CAURD licenses for rural areas</div>
                       </div>
                       <div className="text-emerald-600 font-bold text-sm whitespace-nowrap ml-4">May 30</div>
                     </div>
                     <div className="flex justify-between items-start border-b border-gray-100 pb-2">
                       <div>
                         <div className="font-medium text-gray-900 text-sm">Pennsylvania Cultivation License Renewals — DOH</div>
-                        <div className="text-gray-500 text-xs">All 25 existing permits expire, renewal deadline</div>
+                        <div className="text-gray-400 text-xs">All 25 existing permits expire, renewal deadline</div>
                       </div>
                       <div className="text-emerald-600 font-bold text-sm whitespace-nowrap ml-4">Apr 1</div>
                     </div>
                     <div className="flex justify-between items-start border-b border-gray-100 pb-2">
                       <div>
                         <div className="font-medium text-gray-900 text-sm">Texas Medical Expansion Program — DSHS</div>
-                        <div className="text-gray-500 text-xs">New qualifying conditions and delivery pilot</div>
+                        <div className="text-gray-400 text-xs">New qualifying conditions and delivery pilot</div>
                       </div>
                       <div className="text-emerald-600 font-bold text-sm whitespace-nowrap ml-4">Jun 15</div>
                     </div>
@@ -192,7 +192,7 @@ export default function NewsletterPreview() {
                 Get This Every Week
               </Link>
             </div>
-            <p className="text-gray-500 text-xs mt-4">
+            <p className="text-gray-400 text-xs mt-4">
               Free weekly digest delivered every Monday. Join 300+ cannabis operators.
             </p>
           </div>

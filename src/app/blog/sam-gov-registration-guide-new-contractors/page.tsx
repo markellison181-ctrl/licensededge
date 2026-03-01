@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "SAM.gov Registration: Complete Step-by-Step Guide for New Contractors | ContractPulse",
+  title: "SAM.gov Registration: Complete Step-by-Step Guide for New Contractors | LicensedEdge",
   description: "Master SAM.gov registration with our detailed guide. Learn UEI requirements, NAICS codes, small business certifications, and avoid the 14 most common registration mistakes.",
   keywords: "SAM.gov registration, UEI number, NAICS codes, small business certification, federal contracting, government contractor registration, DUNS number",
   openGraph: {
@@ -10,11 +10,11 @@ export const metadata: Metadata = {
     description: "Master SAM.gov registration and unlock access to $650 billion in federal contracts",
     type: "article",
     publishedTime: "2026-02-28T14:00:00Z",
-    authors: ["ContractPulse Research Team"],
+    authors: ["LicensedEdge Research Team"],
     tags: ["SAM.gov", "Federal Registration", "Government Contracting"],
   },
   alternates: {
-    canonical: "https://contractpulse.io/blog/sam-gov-registration-guide-new-contractors"
+    canonical: "https://licensededge.io/blog/sam-gov-registration-guide-new-contractors"
   }
 };
 

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Archive — ContractPulse",
-  description: "Browse past issues of ContractPulse, Canadian government contract intelligence newsletter.",
+  title: "Archive — LicensedEdge",
+  description: "Browse past issues of LicensedEdge, Canadian government contract intelligence newsletter.",
 };
 
 const issues = [
@@ -44,7 +44,7 @@ export default function ArchivePage() {
         Newsletter <span className="text-gold">Archive</span>
       </h1>
       <p className="text-gray-400 mb-12">
-        Browse past issues of ContractPulse. Each issue delivers the week&apos;s most important 
+        Browse past issues of LicensedEdge. Each issue delivers the week&apos;s most important 
         government contract intelligence.
       </p>
 

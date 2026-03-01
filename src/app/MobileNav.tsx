@@ -31,7 +31,7 @@ export default function MobileNav() {
           <Link href="/pricing" onClick={() => setOpen(false)} className="block text-gray-300 hover:text-gold transition-colors py-2 text-lg">
             Pricing
           </Link>
-          <Link href="/archive/blog/track-federal-government-contracts-canada" onClick={() => setOpen(false)} className="block text-gray-300 hover:text-gold transition-colors py-2 text-lg">
+          <Link href="/blog" onClick={() => setOpen(false)} className="block text-gray-200 hover:text-gold transition-colors py-2 text-lg">
             Blog
           </Link>
           <Link href="/#subscribe" onClick={() => setOpen(false)} className="block bg-gold text-forest px-5 py-3 rounded font-semibold text-center hover:bg-gold-300 transition-colors mt-4">

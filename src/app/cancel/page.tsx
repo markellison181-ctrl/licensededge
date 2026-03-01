@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Checkout Cancelled — ContractPulse",
-  description: "Your checkout was cancelled. Return anytime to subscribe to ContractPulse Pro.",
+  title: "Checkout Cancelled — LicensedEdge",
+  description: "Your checkout was cancelled. Return anytime to subscribe to LicensedEdge Pro.",
 };
 
 export default function CancelPage() {
@@ -24,7 +24,7 @@ export default function CancelPage() {
         </p>
       </div>
 
-      {/* Why ContractPulse? */}
+      {/* Why LicensedEdge? */}
       <div className="bg-gradient-to-b from-forest-500/80 to-forest-500/40 border border-forest-50/30 rounded-xl p-8 mb-8 text-left">
         <h2 className="text-xl font-bold mb-6 text-center">Not quite ready? Here&apos;s what you&apos;re missing:</h2>
         <div className="space-y-4">
@@ -62,7 +62,7 @@ export default function CancelPage() {
       {/* Social Proof */}
       <div className="bg-gradient-to-b from-forest-500/40 to-forest-500/20 border border-forest-50/20 rounded-xl p-6 mb-8">
         <p className="text-gray-300 italic mb-4">
-          &ldquo;ContractPulse has saved me hours every week. Instead of manually checking multiple sites, 
+          &ldquo;LicensedEdge has saved me hours every week. Instead of manually checking multiple sites, 
           I get everything I need in one daily email. The competitive intelligence alone is worth the subscription.&rdquo;
         </p>
         <div className="text-sm text-gray-400">
@@ -99,7 +99,7 @@ export default function CancelPage() {
       <div className="text-center text-sm text-gray-500">
         <p className="mb-2">Questions about pricing or features?</p>
         <div className="space-x-4">
-          <a href="mailto:support@contractpulse.io" className="text-gold hover:underline">
+          <a href="mailto:support@licensededge.io" className="text-gold hover:underline">
             Email Support
           </a>
           <span className="text-gray-600">•</span>

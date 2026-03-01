@@ -131,13 +131,13 @@ export default function Home() {
               <span className="text-gold">cannabis regulation</span>{" "}
               before changes impact your business.
             </h1>
-            <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-10 max-w-2xl">
+            <p className="text-lg md:text-xl text-gray-200 leading-relaxed mb-10 max-w-2xl">
               Weekly intelligence on cannabis licensing, regulatory changes, and
               market entry strategies across all legal states.
             </p>
             <div id="subscribe">
               <SubscribeForm />
-              <p className="text-gray-500 text-xs mt-4">
+              <p className="text-gray-400 text-xs mt-4">
                 Free weekly digest. No spam. Unsubscribe anytime. Industry-focused.
               </p>
             </div>
@@ -158,7 +158,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
               Every issue delivers <span className="text-gold">six regulatory signals</span>
             </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
+            <p className="text-gray-300 max-w-2xl mx-auto">
               No fluff, no filler. Each edition of LicensedEdge is structured to give you
               the cannabis regulatory intelligence that matters in 5 minutes or less.
             </p>
@@ -197,10 +197,10 @@ export default function Home() {
                 description: "Pro subscribers get daily regulatory alerts filtered by state, license type, and business stage. Plus compliance calendar access.",
               },
             ].map((item, i) => (
-              <div key={i} className="card-hover bg-white/[0.04] border border-white/10 rounded-lg p-6 hover:border-gold/30">
+              <div key={i} className="card-hover bg-white/[0.06] border border-white/15 rounded-lg p-6 hover:border-gold/30">
                 <div className="text-gold mb-3">{item.icon}</div>
                 <h3 className="text-lg font-semibold mb-2 tracking-tight">{item.title}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">{item.description}</p>
+                <p className="text-gray-300 text-sm leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
@@ -219,15 +219,15 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-4 tracking-tight">
             Start free. Upgrade when you need more.
           </h2>
-          <p className="text-gray-400 mb-12 max-w-2xl mx-auto">
+          <p className="text-gray-300 mb-12 max-w-2xl mx-auto">
             The free weekly edition gives you essential regulatory signals. Pro and Enterprise unlock
             daily alerts, compliance calendars, and multi-state tracking.
           </p>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <div className="card-hover bg-gradient-to-b from-emerald-500/80 to-emerald-500/40 border border-white/10 rounded-xl p-8">
-              <div className="text-gray-400 label-uppercase mb-2">Free</div>
+              <div className="text-gray-300 label-uppercase mb-2">Free</div>
               <div className="text-4xl font-bold mb-1">$0</div>
-              <div className="text-gray-500 text-sm mb-6">forever</div>
+              <div className="text-gray-400 text-sm mb-6">forever</div>
               <ul className="space-y-3 text-sm text-gray-300 text-left mb-8">
                 <li className="flex items-start gap-2"><IconCheck /> Weekly regulatory digest</li>
                 <li className="flex items-start gap-2"><IconCheck /> Top 5 state updates</li>
@@ -244,7 +244,7 @@ export default function Home() {
               </div>
               <div className="text-gold label-uppercase mb-2">Pro</div>
               <div className="text-4xl font-bold mb-1">$29</div>
-              <div className="text-gray-500 text-sm mb-6">per month</div>
+              <div className="text-gray-400 text-sm mb-6">per month</div>
               <ul className="space-y-3 text-sm text-gray-300 text-left mb-8">
                 <li className="flex items-start gap-2"><IconCheck /> Everything in Free</li>
                 <li className="flex items-start gap-2"><IconCheck /> Daily regulatory alerts</li>
@@ -257,9 +257,9 @@ export default function Home() {
               </Link>
             </div>
             <div className="card-hover bg-gradient-to-b from-emerald-500/80 to-emerald-500/40 border border-white/10 rounded-xl p-8">
-              <div className="text-gray-400 label-uppercase mb-2">Enterprise</div>
+              <div className="text-gray-300 label-uppercase mb-2">Enterprise</div>
               <div className="text-4xl font-bold mb-1">$99</div>
-              <div className="text-gray-500 text-sm mb-6">per month</div>
+              <div className="text-gray-400 text-sm mb-6">per month</div>
               <ul className="space-y-3 text-sm text-gray-300 text-left mb-8">
                 <li className="flex items-start gap-2"><IconCheck /> Everything in Pro</li>
                 <li className="flex items-start gap-2"><IconCheck /> Up to 10 team seats</li>
@@ -281,7 +281,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-4 tracking-tight">
             Don&apos;t let regulatory changes catch you off-guard.
           </h2>
-          <p className="text-gray-400 mb-8">
+          <p className="text-gray-300 mb-8">
             Join the cannabis operators, compliance officers, and investors who
             start every week with LicensedEdge.
           </p>

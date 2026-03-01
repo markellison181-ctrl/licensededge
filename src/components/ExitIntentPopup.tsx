@@ -100,7 +100,7 @@ export default function ExitIntentPopup({ onSubscribe }: ExitIntentPopupProps) {
           {/* Close button */}
           <button
             onClick={handleClose}
-            className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors"
+            className="absolute top-4 right-4 text-gray-300 hover:text-white transition-colors"
             aria-label="Close popup"
           >
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -156,7 +156,7 @@ export default function ExitIntentPopup({ onSubscribe }: ExitIntentPopupProps) {
                 <p className="text-red-400 text-sm text-center">{message}</p>
               )}
               
-              <p className="text-gray-500 text-xs text-center">
+              <p className="text-gray-400 text-xs text-center">
                 Free weekly digest. No spam. Unsubscribe anytime.
               </p>
             </form>
@@ -168,7 +168,7 @@ export default function ExitIntentPopup({ onSubscribe }: ExitIntentPopupProps) {
                 </svg>
               </div>
               <p className="text-green-400 font-medium">{message}</p>
-              <p className="text-gray-400 text-sm mt-2">
+              <p className="text-gray-300 text-sm mt-2">
                 This popup will close automatically...
               </p>
             </div>

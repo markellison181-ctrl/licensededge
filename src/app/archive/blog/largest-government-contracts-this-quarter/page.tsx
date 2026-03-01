@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "The 10 Largest Government Contracts Awarded This Quarter — ContractPulse",
+  title: "The 10 Largest Government Contracts Awarded This Quarter — LicensedEdge",
   description: "From defence to IT to infrastructure — the biggest Canadian federal contract awards of Q1 2026 and what they signal about government priorities.",
   openGraph: {
     title: "The 10 Largest Government Contracts Awarded This Quarter",
@@ -165,7 +165,7 @@ export default function BlogPost() {
         <div className="mt-12 bg-gold/5 border border-gold/20 rounded-lg p-8">
           <h3 className="text-xl font-bold text-white mb-3">Track These Contracts Weekly</h3>
           <p className="text-gray-400 mb-4">
-            ContractPulse tracks the largest and most significant federal contracts every week. 
+            LicensedEdge tracks the largest and most significant federal contracts every week. 
             Subscribe for free to get the signals that matter.
           </p>
           <Link href="/#subscribe" className="inline-flex items-center gap-2 bg-gold text-forest px-6 py-3 rounded font-semibold text-sm hover:bg-gold-300 transition-colors">

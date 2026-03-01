@@ -5,11 +5,11 @@ const StateSourceLogo = ({ name }: { name: string }) => (
   <div className="flex items-center justify-center p-4 bg-white/5 border border-white/10 rounded-lg hover:border-gold/30 transition-all duration-200 group">
     <div className="text-center">
       <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center mb-2 mx-auto group-hover:bg-gold/20 transition-colors">
-        <svg className="w-4 h-4 text-gray-400 group-hover:text-gold transition-colors" fill="currentColor" viewBox="0 0 20 20">
+        <svg className="w-4 h-4 text-gray-300 group-hover:text-gold transition-colors" fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z" clipRule="evenodd" />
         </svg>
       </div>
-      <div className="text-xs font-medium text-gray-400 group-hover:text-gray-300 transition-colors">
+      <div className="text-xs font-medium text-gray-300 group-hover:text-gray-300 transition-colors">
         {name}
       </div>
     </div>
@@ -28,7 +28,7 @@ const CompanyLogo = ({ name, sector }: { name: string; sector: string }) => (
       <div className="text-xs font-medium text-gray-300 group-hover:text-white transition-colors">
         {name}
       </div>
-      <div className="text-xs text-gray-500 group-hover:text-gray-400 transition-colors">
+      <div className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors">
         {sector}
       </div>
     </div>
@@ -60,7 +60,7 @@ export default function TrustBar() {
         {/* Data Sources */}
         <div className="mb-12">
           <div className="text-center mb-8">
-            <p className="text-gray-400 text-sm font-medium uppercase tracking-wider mb-6">
+            <p className="text-gray-300 text-sm font-medium uppercase tracking-wider mb-6">
               Data sourced from official state regulatory agencies
             </p>
           </div>
@@ -74,7 +74,7 @@ export default function TrustBar() {
         {/* Trusted By */}
         <div>
           <div className="text-center mb-8">
-            <p className="text-gray-400 text-sm font-medium uppercase tracking-wider mb-6">
+            <p className="text-gray-300 text-sm font-medium uppercase tracking-wider mb-6">
               Trusted by cannabis operators nationwide
             </p>
           </div>
@@ -99,7 +99,7 @@ export default function TrustBar() {
                 </svg>
               </div>
               <div className="text-lg font-semibold text-white">Industry Compliant</div>
-              <div className="text-gray-400 text-sm">
+              <div className="text-gray-300 text-sm">
                 Full compliance with cannabis industry standards
               </div>
             </div>
@@ -110,7 +110,7 @@ export default function TrustBar() {
                 </svg>
               </div>
               <div className="text-lg font-semibold text-white">Data Security</div>
-              <div className="text-gray-400 text-sm">
+              <div className="text-gray-300 text-sm">
                 Bank-level encryption and secure data handling
               </div>
             </div>
@@ -121,7 +121,7 @@ export default function TrustBar() {
                 </svg>
               </div>
               <div className="text-lg font-semibold text-white">Real-time Updates</div>
-              <div className="text-gray-400 text-sm">
+              <div className="text-gray-300 text-sm">
                 Automated monitoring of all 40+ state regulatory agencies
               </div>
             </div>

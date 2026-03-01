@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Issue #1 — ContractPulse Weekly",
+  title: "Issue #1 — LicensedEdge Weekly",
   description:
-    "DoD IT modernization spending hits $15B, new GSA cybersecurity requirements reshape procurement, small business set-asides surge — ContractPulse Issue #1.",
+    "DoD IT modernization spending hits $15B, new GSA cybersecurity requirements reshape procurement, small business set-asides surge — LicensedEdge Issue #1.",
   openGraph: {
-    title: "ContractPulse Issue #1 — DoD IT Spending Surge Reshapes Federal Procurement",
+    title: "LicensedEdge Issue #1 — DoD IT Spending Surge Reshapes Federal Procurement",
     description:
-      "The first issue of ContractPulse: US federal government contract intelligence and procurement opportunities.",
+      "The first issue of LicensedEdge: US federal government contract intelligence and procurement opportunities.",
     type: "article",
     publishedTime: "2026-02-28T12:00:00Z",
   },
@@ -24,7 +24,7 @@ export default function SampleIssuePage() {
             <span className="text-forest font-bold text-sm">CP</span>
           </div>
           <div>
-            <div className="text-white font-semibold">ContractPulse Weekly</div>
+            <div className="text-white font-semibold">LicensedEdge Weekly</div>
             <div className="text-gray-500 text-sm">Issue #1 — February 28, 2026</div>
           </div>
         </div>
@@ -32,7 +32,7 @@ export default function SampleIssuePage() {
           DoD IT Modernization Hits $15B; New GSA Cybersecurity Rules; Small Business Set-Asides Surge 45%
         </h1>
         <p className="text-gray-400 leading-relaxed">
-          Welcome to the first edition of ContractPulse. Each week, we analyze SAM.gov postings,
+          Welcome to the first edition of LicensedEdge. Each week, we analyze SAM.gov postings,
           USAspending.gov data, and federal procurement trends to bring you the intelligence that 
           matters for government contractors. This week: massive defense IT spending, new security 
           requirements reshaping bids, and unprecedented small business opportunities.
@@ -330,7 +330,7 @@ export default function SampleIssuePage() {
         <div className="bg-gold/5 border border-gold/20 rounded-lg p-8 text-center">
           <h3 className="text-xl font-bold mb-3">Get this every Monday</h3>
           <p className="text-gray-400 text-sm mb-6">
-            ContractPulse delivers US federal government contract intelligence to your inbox 
+            LicensedEdge delivers US federal government contract intelligence to your inbox 
             every week. Free to subscribe.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">

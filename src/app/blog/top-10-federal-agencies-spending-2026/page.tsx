@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Top 10 Federal Agencies Spending the Most in 2026: Complete Analysis | ContractPulse",
+  title: "Top 10 Federal Agencies Spending the Most in 2026: Complete Analysis | LicensedEdge",
   description: "Discover which federal agencies spend the most on contracts in 2026. DoD leads with $180B, followed by VA, DHS, and others. Includes spending trends, top contract categories, and winning strategies.",
   keywords: "federal agency spending, DoD contracts, VA contracting, DHS procurement, federal spending analysis, government contract opportunities, agency procurement budgets",
   openGraph: {
@@ -10,11 +10,11 @@ export const metadata: Metadata = {
     description: "Data-driven analysis of the biggest federal contract opportunities by agency",
     type: "article",
     publishedTime: "2026-02-28T16:00:00Z",
-    authors: ["ContractPulse Research Team"],
+    authors: ["LicensedEdge Research Team"],
     tags: ["Federal Spending", "Agency Analysis", "Contract Opportunities"],
   },
   alternates: {
-    canonical: "https://contractpulse.io/blog/top-10-federal-agencies-spending-2026"
+    canonical: "https://licensededge.io/blog/top-10-federal-agencies-spending-2026"
   }
 };
 

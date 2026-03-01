@@ -4,8 +4,8 @@ import { Suspense } from "react";
 import SuccessContent from "./SuccessContent";
 
 export const metadata: Metadata = {
-  title: "Welcome to ContractPulse Pro! — ContractPulse",
-  description: "Your ContractPulse Pro subscription is active. Get ready for daily contract intelligence and exclusive data access.",
+  title: "Welcome to LicensedEdge Pro! — LicensedEdge",
+  description: "Your LicensedEdge Pro subscription is active. Get ready for daily contract intelligence and exclusive data access.",
 };
 
 export default function SuccessPage() {

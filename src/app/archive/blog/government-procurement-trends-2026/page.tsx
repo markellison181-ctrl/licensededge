@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Government Procurement Trends: What Contractors Need to Know in 2026 — ContractPulse",
+  title: "Government Procurement Trends: What Contractors Need to Know in 2026 — LicensedEdge",
   description: "Buy Canadian, digital transformation, Indigenous procurement, and housing — the key trends shaping Canadian federal contracting in 2026.",
   openGraph: {
     title: "Government Procurement Trends: What Contractors Need to Know in 2026",
@@ -165,7 +165,7 @@ export default function BlogPost() {
         <div className="mt-12 bg-gold/5 border border-gold/20 rounded-lg p-8">
           <h3 className="text-xl font-bold text-white mb-3">Stay Ahead of These Trends</h3>
           <p className="text-gray-400 mb-4">
-            ContractPulse tracks every trend, policy change, and major contract award weekly. 
+            LicensedEdge tracks every trend, policy change, and major contract award weekly. 
             Don&apos;t be the last to know.
           </p>
           <Link href="/#subscribe" className="inline-flex items-center gap-2 bg-gold text-forest px-6 py-3 rounded font-semibold text-sm hover:bg-gold-300 transition-colors">

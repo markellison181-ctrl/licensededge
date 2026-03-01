@@ -3,16 +3,16 @@ import Link from "next/link";
 import { Suspense } from "react";
 
 export const metadata: Metadata = {
-  title: "Government Contracting Intelligence & Guides | ContractPulse Blog",
+  title: "Government Contracting Intelligence & Guides | LicensedEdge Blog",
   description: "Expert analysis, step-by-step guides, and actionable intelligence for federal contractors. Master SAM.gov, discover spending trends, and win more government contracts.",
   keywords: "government contracting blog, federal procurement guides, SAM.gov help, contracting intelligence, federal spending analysis, contractor resources",
   openGraph: {
-    title: "Government Contracting Intelligence & Guides | ContractPulse Blog",
+    title: "Government Contracting Intelligence & Guides | LicensedEdge Blog",
     description: "Expert analysis and actionable intelligence for federal contractors",
     type: "website",
   },
   alternates: {
-    canonical: "https://contractpulse.io/blog"
+    canonical: "https://licensededge.io/blog"
   }
 };
 

@@ -19,7 +19,7 @@ export default function ReferralCard({ userEmail }: ReferralCardProps) {
     }
   }, [userEmail]);
 
-  const referralUrl = referralCode ? `https://contractpulse.io?ref=${referralCode}` : '';
+  const referralUrl = referralCode ? `https://licensededge.io?ref=${referralCode}` : '';
 
   const copyReferralLink = async () => {
     if (referralUrl) {
@@ -43,7 +43,7 @@ export default function ReferralCard({ userEmail }: ReferralCardProps) {
         </div>
         <h2 className="text-2xl font-bold text-white mb-2">🎁 Earn Free Months</h2>
         <p className="text-gray-300">
-          Refer 3 friends to ContractPulse and get 1 month free. Here&apos;s your unique referral link:
+          Refer 3 friends to LicensedEdge and get 1 month free. Here&apos;s your unique referral link:
         </p>
       </div>
 
