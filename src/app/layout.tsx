@@ -149,7 +149,7 @@ function Footer() {
         </div>
         <div className="mt-8 pt-8 border-t border-forest-50/20 text-center">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} SignalStack Media Inc. All rights reserved.
+            © {new Date().getFullYear()} SignalStack Media LLC. All rights reserved.
           </p>
         </div>
       </div>

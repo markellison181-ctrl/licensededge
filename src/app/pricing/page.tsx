@@ -188,6 +188,27 @@ export default function PricingPage() {
         </div>
       </div>
 
+      
+
+      {/* Sample Analysis */}
+      <div className="max-w-4xl mx-auto mt-16 mb-8">
+        <h3 className="text-xl font-semibold text-center mb-6">See sample analysis from our team</h3>
+        <div className="grid md:grid-cols-3 gap-4">
+          <Link href="/blog/cannabis-industry-trends-market-size-growth" className="block p-4 rounded-lg border border-gold/20 hover:border-gold/40 transition-all text-center">
+            <span className="text-gold text-sm font-medium">Cannabis Industry Trends: Market Size & Growth Analysis</span>
+            <span className="block text-gray-400 text-xs mt-1">Read analysis →</span>
+          </Link>
+          <Link href="/blog/how-to-open-dispensary-2026" className="block p-4 rounded-lg border border-gold/20 hover:border-gold/40 transition-all text-center">
+            <span className="text-gold text-sm font-medium">How to Open a Dispensary in 2026: Complete Guide</span>
+            <span className="block text-gray-400 text-xs mt-1">Read analysis →</span>
+          </Link>
+          <Link href="/blog/cannabis-license-application-guide-state-by-state" className="block p-4 rounded-lg border border-gold/20 hover:border-gold/40 transition-all text-center">
+            <span className="text-gold text-sm font-medium">Cannabis License Application Guide: State by State</span>
+            <span className="block text-gray-400 text-xs mt-1">Read analysis →</span>
+          </Link>
+        </div>
+      </div>
+
       {/* FAQ */}
       <div className="max-w-4xl mx-auto mt-24">
         <div className="text-center mb-16">
