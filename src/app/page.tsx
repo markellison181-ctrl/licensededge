@@ -151,6 +151,23 @@ export default function Home() {
       {/* Animated Stats */}
       <AnimatedStats />
 
+      {/* Lead Magnet Banner */}
+      <section className="py-8 bg-purple-600/10 border-y border-purple-500/20">
+        <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <p className="text-sm text-purple-400 font-semibold mb-1">📋 FREE GUIDE</p>
+            <p className="text-white font-bold text-lg">State-by-State Cannabis License Guide 2026</p>
+            <p className="text-gray-400 text-sm">20 states, application windows, fees, and difficulty ratings. Unlock instantly.</p>
+          </div>
+          <Link
+            href="/reports/state-cannabis-license-guide-2026"
+            className="shrink-0 px-6 py-3 bg-purple-600 hover:bg-purple-500 text-white font-semibold rounded-lg transition text-sm"
+          >
+            Get Free Guide →
+          </Link>
+        </div>
+      </section>
+
       {/* What You Get */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-6">
