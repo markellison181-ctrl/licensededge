@@ -155,6 +155,40 @@ function Footer() {
   );
 }
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://licensededge.com/#organization",
+      name: "SignalStack Media LLC",
+      url: "https://signalstackmedia.com",
+      logo: "https://licensededge.com/og-image.png",
+      sameAs: ["https://x.com/SignalStackHQ"],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://licensededge.com/#website",
+      url: "https://licensededge.com",
+      name: "LicensedEdge",
+      publisher: { "@id": "https://licensededge.com/#organization" },
+      potentialAction: {
+        "@type": "SearchAction",
+        target: "https://licensededge.com/blog?q={search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    },
+    {
+      "@type": "Periodical",
+      name: "LicensedEdge Newsletter",
+      url: "https://licensededge.com",
+      publisher: { "@id": "https://licensededge.com/#organization" },
+      description: "Weekly intelligence on cannabis licensing, regulatory changes, and market entry strategies across all legal states.",
+      isAccessibleForFree: true,
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -162,6 +196,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={`${inter.className} bg-forest text-white antialiased`}>
         <Header />
         <main>{children}</main>
