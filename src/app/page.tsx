@@ -84,7 +84,7 @@ function SubscribeForm() {
           onChange={(e) => setEmail(e.target.value)}
           placeholder="you@cannabis.com"
           required
-          className="flex-1 px-4 py-3 rounded bg-white/10 border border-white/20 text-white placeholder-gray-400 text-sm transition-all duration-200"
+          className="flex-1 px-4 py-3 rounded bg-white/10 border border-white/30 text-white placeholder-gray-500 text-sm transition-all duration-200"
         />
         <button
           type="submit"
@@ -113,29 +113,27 @@ export default function Home() {
       <StickyBottomCTA />
 
       {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-emerald via-emerald-300 to-emerald" />
-        <div className="absolute inset-0 opacity-5">
+      <section className="relative overflow-hidden" style={{ background: "linear-gradient(180deg, #0d2118 0%, #0a1a14 100%)" }}>
+        <div className="absolute inset-0 opacity-[0.03]">
           <div className="absolute inset-0" style={{
-            backgroundImage: "radial-gradient(circle at 1px 1px, rgba(201,168,76,0.3) 1px, transparent 0)",
+            backgroundImage: "radial-gradient(circle at 1px 1px, rgba(201,168,76,0.4) 1px, transparent 0)",
             backgroundSize: "40px 40px",
           }} />
         </div>
         <div className="relative max-w-6xl mx-auto px-6 py-20 md:py-32">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-gold/10 border border-gold/20 rounded-full px-4 py-1.5 mb-8">
+            <div className="inline-flex items-center gap-2 bg-gold/10 border border-gold/30 rounded-full px-4 py-1.5 mb-8">
               <div className="w-2 h-2 bg-gold rounded-full animate-pulse" />
               <span className="text-gold text-sm font-medium">Free weekly edition every Monday</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold leading-[1.1] mb-6 tracking-tight">
+            <h1 className="text-4xl md:text-6xl font-bold text-white leading-[1.1] mb-6 tracking-tight">
               Stay ahead in{" "}
               <span className="text-gold">cannabis regulation</span>{" "}
               before changes impact your business.
             </h1>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-10 max-w-2xl">
-              LicensedEdge delivers weekly intelligence on cannabis licensing opportunities,
-              regulatory changes, compliance updates, and market entry strategies across
-              all legal states. The edge you need to navigate the cannabis industry.
+              Weekly intelligence on cannabis licensing, regulatory changes, and
+              market entry strategies across all legal states.
             </p>
             <div id="subscribe">
               <SubscribeForm />
@@ -199,7 +197,7 @@ export default function Home() {
                 description: "Pro subscribers get daily regulatory alerts filtered by state, license type, and business stage. Plus compliance calendar access.",
               },
             ].map((item, i) => (
-              <div key={i} className="card-hover bg-emerald-500/50 border border-emerald-50/20 rounded-lg p-6 hover:border-gold/30">
+              <div key={i} className="card-hover bg-white/[0.04] border border-white/10 rounded-lg p-6 hover:border-gold/30">
                 <div className="text-gold mb-3">{item.icon}</div>
                 <h3 className="text-lg font-semibold mb-2 tracking-tight">{item.title}</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">{item.description}</p>
@@ -226,7 +224,7 @@ export default function Home() {
             daily alerts, compliance calendars, and multi-state tracking.
           </p>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="card-hover bg-gradient-to-b from-emerald-500/80 to-emerald-500/40 border border-emerald-50/30 rounded-xl p-8">
+            <div className="card-hover bg-gradient-to-b from-emerald-500/80 to-emerald-500/40 border border-white/10 rounded-xl p-8">
               <div className="text-gray-400 label-uppercase mb-2">Free</div>
               <div className="text-4xl font-bold mb-1">$0</div>
               <div className="text-gray-500 text-sm mb-6">forever</div>
@@ -258,7 +256,7 @@ export default function Home() {
                 Start Pro Trial
               </Link>
             </div>
-            <div className="card-hover bg-gradient-to-b from-emerald-500/80 to-emerald-500/40 border border-emerald-50/30 rounded-xl p-8">
+            <div className="card-hover bg-gradient-to-b from-emerald-500/80 to-emerald-500/40 border border-white/10 rounded-xl p-8">
               <div className="text-gray-400 label-uppercase mb-2">Enterprise</div>
               <div className="text-4xl font-bold mb-1">$99</div>
               <div className="text-gray-500 text-sm mb-6">per month</div>
@@ -278,7 +276,7 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-emerald-500">
+      <section className="py-20 bg-[#0d2118]">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-4 tracking-tight">
             Don&apos;t let regulatory changes catch you off-guard.
